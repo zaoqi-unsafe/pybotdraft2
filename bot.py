@@ -26,3 +26,8 @@ class Bot:
     def _do_on_private_message(self, sender : User, message : Message) -> None:
         for callback in self.private_message_callbacks:
             callback(sender, message)
+    def send_group_message(self, group : Group, message : Message) -> None:
+        pass
+    def send_private_message(self, user : User, message : Message) -> None:
+        pass
+    
