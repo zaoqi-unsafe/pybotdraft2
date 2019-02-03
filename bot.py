@@ -30,4 +30,7 @@ class Bot:
         pass
     def send_private_message(self, user : User, message : Message) -> None:
         pass
+    @property
+    def alive(self) -> bool:
+        return False
     
