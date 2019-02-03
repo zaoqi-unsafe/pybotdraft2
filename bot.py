@@ -1,14 +1,14 @@
 from typing import List, Callable
-class Group(object):
+class Group:
     def __init__(self):
         pass # WIP
-class User(object):
+class User:
     def __init__(self):
         pass # WIP
-class Message(object):
+class Message:
     def __init__(self):
         pass # WIP
-class Bot(object):
+class Bot:
     def __init__(self):
         self.group_message_callbacks : List[Callable[[Group, User, Message]] =  []
         self.private_message_callbacks : List[Callable[[User, Message]] = []
